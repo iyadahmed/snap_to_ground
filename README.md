@@ -1,6 +1,7 @@
-# snap_to_ground
+# Snap to Ground
 
 Simple addon for snapping active object to mesh ground
 
-install the python file as an addon 
-shortcut "D" in 3D view object mode
+**How to install:**
+- install the Python file as an addon 
+- use shortcut "D" in 3D view object mode
