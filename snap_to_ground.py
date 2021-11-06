@@ -84,9 +84,9 @@ addon_keymaps = []
 
 def register():
     wm = bpy.context.window_manager
-    km = wm.keyconfigs.addon.keymaps.new(name="Object Mode", space_type="VIEW_3D")
+    km = wm.keyconfigs.addon.keymaps.new(name="3D View", space_type="VIEW_3D")
 
-    kmi = km.keymap_items.new(STG_OT_snap_to_ground.bl_idname, "V", "PRESS")
+    kmi = km.keymap_items.new(STG_OT_snap_to_ground.bl_idname, "D", "PRESS")
     addon_keymaps.append((km, kmi))
 
     bpy.utils.register_class(STG_OT_snap_to_ground)
