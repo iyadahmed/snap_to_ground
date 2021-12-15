@@ -31,7 +31,7 @@ import sys
 
 
 def transform_direction_vector(mat, vec):
-    return (mat @ Vector(vec)) - (mat @ Vector((0, 0, 0)))
+    return mat.inverted_safe().transposed() @ vec
 
 
 class STG_OT_snap_to_ground(bpy.types.Operator):
